@@ -3,10 +3,14 @@
 <div *ngFor="let product of products">
 
   <h3>
-    <a [title]="product.name + ' details'" [href]="product.name + ' alter'" target=_blank>
+    <a [title]="product.name + ' details'" [href]="product.name + ' href'" target=_blank [name]="product.name + ' is the name'">
       {{ product.name }}
     </a>
   </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
 
 </div>
 
