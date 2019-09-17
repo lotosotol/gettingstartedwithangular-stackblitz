@@ -11,11 +11,19 @@
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
+  <!--
+  <p *ngIf="product.price">
+    Price: {{ product.price }}
+  </p>
+  -->
 
   <button (click)="share()">
     Share
   </button>
 
+  <app-product-alerts
+  [product]="product">
+</app-product-alerts>
 </div>
 
 
