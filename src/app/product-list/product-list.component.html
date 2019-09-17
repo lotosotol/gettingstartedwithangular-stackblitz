@@ -1,5 +1,15 @@
 <h2>Products</h2>
 
+<div *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'" [href]="product.name + ' alter'" target=_blank>
+      {{ product.name }}
+    </a>
+  </h3>
+
+</div>
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
